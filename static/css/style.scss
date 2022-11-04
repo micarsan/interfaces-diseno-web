@@ -1,21 +1,68 @@
-$color: red;
-$tamano: 4rem;
+$red_color: red;
+$h1_font_size: 4rem;
 
-@mixin rojito {
-    background-color: $color;
+@mixin rojito($a) {
+    background-color: $a;
 }
 
-h1 {
-    //background-color: $color;
-    @include rojito();
-    font-size: $tamano;
+body {
+    margin: 0;
+}
 
-    a {
-        text-decoration: none;
-        color: white;
+header {
+    @include rojito($red_color);
+
+    h1 {
+        //background-color: $color;
+        font-size: $h1_font_size;
+
+        margin: 0 auto;
+        width: fit-content;
+
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        &:hover{
+            color: green;
+        }
     }
 
-    &:hover{
-        color: green;
+    nav.main_menu {
+        ul {
+            margin: 0;
+            padding: 5px;
+
+            background-color: #333;
+
+            li { 
+                display: inline-block;
+                margin: 0 3px;
+                padding: 0 3px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover {
+                        border-bottom: 1px dotted $red_color;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+main {
+    section {
+        padding: 20px;
+
+        h2 {
+            margin-top: 0;
+        }
     }
 }

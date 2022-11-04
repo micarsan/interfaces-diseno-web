@@ -1,11 +1,45 @@
-h1 {
-  background-color: red;
-  font-size: 4rem;
+body {
+  margin: 0;
 }
-h1 a {
+
+header {
+  background-color: red;
+}
+header h1 {
+  font-size: 4rem;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+header h1 a {
   text-decoration: none;
   color: white;
 }
-h1:hover {
+header h1:hover {
   color: green;
+}
+header nav.main_menu ul {
+  margin: 0;
+  padding: 5px;
+  background-color: #333;
+}
+header nav.main_menu ul li {
+  display: inline-block;
+  margin: 0 3px;
+  padding: 0 3px;
+}
+header nav.main_menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+header nav.main_menu ul li a:hover {
+  border-bottom: 1px dotted red;
+}
+
+main section {
+  padding: 20px;
+}
+main section h2 {
+  margin-top: 0;
 }/*# sourceMappingURL=style.css.map */
