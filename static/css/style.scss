@@ -1,0 +1,21 @@
+$color: red;
+$tamano: 4rem;
+
+@mixin rojito {
+    background-color: $color;
+}
+
+h1 {
+    //background-color: $color;
+    @include rojito();
+    font-size: $tamano;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &:hover{
+        color: green;
+    }
+}
